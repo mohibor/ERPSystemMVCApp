@@ -1,0 +1,29 @@
+﻿@{
+    ERPSystemMVCApp.EF.User sessionUser = null;
+
+    if (Session["user"] != null)
+    {
+        sessionUser = (ERPSystemMVCApp.EF.User)Session["user"];
+    }
+}
+<div class="animate-100 d-md-block list-group mb-3">
+    @if (sessionUser != null && sessionUser.Type == 1)
+    {
+        @Html.ActionLink("Verify Users", "ViewUnverifiedUsers", "Admin", null, new { @class = "list-group-item list-group-item-action" })
+        @Html.ActionLink("View Users", "ViewVerifiedUsers", "Admin", null, new { @class = "list-group-item list-group-item-action" })
+        @Html.ActionLink("Add User", "CreateUser", "Admin", null, new { @class = "list-group-item list-group-item-action" })
+        @Html.ActionLink("Add Permission", "CreatePermission", "Admin", null, new { @class = "list-group-item list-group-item-action" })
+    }
+    else if (sessionUser != null && sessionUser.Type == 2)
+    {
+        <a href="" class="list-group-item list-group-item-action"></a>
+    }
+    else if (sessionUser != null && sessionUser.Type == 3)
+    {
+        <a href="" class="list-group-item list-group-item-action"></a>
+    }
+    else if (sessionUser != null && sessionUser.Type == 4)
+    {
+        <a href="" class="list-group-item list-group-item-action"></a>
+    }
+</div>

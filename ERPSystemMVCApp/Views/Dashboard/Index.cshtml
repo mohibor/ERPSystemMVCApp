@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+
+    ERPSystemMVCApp.EF.User sessionUser = null;
+
+    if (Session["user"] != null)
+    {
+        sessionUser = (ERPSystemMVCApp.EF.User)Session["user"];
+    }
+}
+
+
+<h1>Welcome @sessionUser.Name</h1>

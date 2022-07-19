@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="678b55a2e8c3429585bc028b3d0bee5b" Name="Diagram1">
+        <EntityTypeShape EntityType="ERPSystemDBModel.Address" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Branch" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Category" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Customer" Width="1.5" PointX="13.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Inventory" Width="1.5" PointX="7.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Invoice" Width="1.5" PointX="15.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Payment" Width="1.5" PointX="12.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Permission" Width="1.5" PointX="8.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.Region" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.User" Width="1.5" PointX="10.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.VacationDetail" Width="1.5" PointX="12.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.WorkingHour" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERPSystemDBModel.WorkPost" Width="1.5" PointX="12.75" PointY="19.625" IsExpanded="true" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Branches_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Regions_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Users_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Branches_Regions" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Inventories_Branches" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Users_Branches" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Inventories_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Invoices_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Invoices_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Payments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_Users_Regions" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_VacationDetails_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_WorkingHours_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.FK_WorkPosts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.CategoryInvoice" ManuallyRouted="false" />
+        <AssociationConnector Association="ERPSystemDBModel.PermissionUser" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
